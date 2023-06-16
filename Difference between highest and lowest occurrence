@@ -1,0 +1,27 @@
+Given an array, the task is to find the difference between highest occurrence and lowest occurrence of any number in an array.
+Note: If only one type of element is present in the array return 0.
+ 
+
+Example 1:
+
+Input:
+arr[] = [1, 2, 2]
+Output:
+1
+Explanation:
+Lowest occurring element (1) occurs once.
+Highest occurring element (2) occurs 2 times
+--------------------------------------------------------------------
+#User function Template for python3
+from collections import Counter
+class Solution:
+    def findDiff(self, a, n):
+        #Code here
+        c=Counter(a)
+        freq=c.values()
+        h=int(max(freq))
+        l=int(min(freq))
+        return h-l
+    
+    
+    
