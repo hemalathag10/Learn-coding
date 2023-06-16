@@ -1,0 +1,37 @@
+Given an array of n string containing lowercase letters. Find the size of largest subset of string which are anagram of each others. An anagram of a string is another string that contains same characters, only the order of characters can be different. For example, “abcd” and “dabc” are anagram of each other. 
+ 
+
+Input: 
+ant magenta magnate tan gnamate
+Output: 3
+Explanation
+Anagram strings(1) - ant, tan
+Anagram strings(2) - magenta, magnate,
+                     gnamate
+Thus, only second subset have largest
+size i.e., 3
+--------------------------------------------------------------------------------------------------------------------
+from collections import Counter
+s="ant magenta magnate tan gnamate"
+km=s.split(" ")
+l=[]
+print(s)
+for i in km:
+    l.append(Counter(i))
+
+for i in l:
+    k=l.count(i)
+print(k)
+    
+---------------------------------------------------------
+s="ant magenta magnate tan gnamate"
+k=s.split()
+l=[]
+for i in k:
+    l.append(sorted(i))
+print(l)
+ans=0
+for i in l:
+    if l.count(i)>ans:
+        ans=l.count(i)
+print(ans)
