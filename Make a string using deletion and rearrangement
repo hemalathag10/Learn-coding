@@ -1,0 +1,29 @@
+Given two strings, find if we can make first string from second by deleting some characters from second and rearranging remaining characters. 
+
+Examples:
+
+Input : s1 = ABHISHEKsinGH
+      : s2 = gfhfBHkooIHnfndSHEKsiAnG
+Output : Possible
+
+Input : s1 = Hello
+      : s2 = dnaKfhelddf
+Output : Not Possible
+
+Input : s1 = GeeksforGeeks
+      : s2 = rteksfoGrdsskGeggehes
+Output : Possible
+
+--------------------------------------------------
+from collections import Counter
+s1 = "ABHISHEKsinGH"
+s2 = "gfhfBHkooIHnfndSHEKsiAnG"
+
+c1=Counter(s1)
+c2=Counter(s2)
+m=c1 & c2   ## gives intersection of c1 and c2##
+print(m)
+if m==c1:
+    print("possible")
+else:
+    print("not possible")
