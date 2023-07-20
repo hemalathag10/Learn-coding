@@ -1,0 +1,79 @@
+1. What is an Array?
+  An array is a collection of items of same data type stored at contiguous memory locations. 
+
+2. Arrays are classified into two types based on their dimensions : single-dimensional and multi-dimensional. Logically, a single-dimensional array represents a linear collection of data, 
+   and a two-dimensional array represents a mathematical matrix. Similarly, a multidimensional array has multiple dimensions.
+
+3. declare an array in different programming languages.
+  C : int arr[];
+      arr=[5,7,6,1]
+  python : list=[8,5,6,2,1]
+
+4. Iterate an array
+
+    Print each item in the cars array:
+    for x in cars:
+      print(x)
+    for i in range(len(cars)):
+        print(cars[i])
+5.SUm of all elements in an array
+li=[1,2,3,4,5]
+an=sum(li)
+print(an)
+----------- ans:15
+
+6. how do you access element an array:
+   li[index] or direct accessing element
+    for x in cars:
+      print(x)
+    for i in range(len(cars)):
+        print(cars[i])
+
+7. Average of all elements in an array
+   li=[1,2,3,4,5]
+   n=len(li)
+   print(sum(li)//n)
+
+8. maximum element
+  print(max(li))----------->> 5
+
+9. minimum element
+  print(min(li))---------------->> 1
+
+10. check element if exist in an array
+     li=[1,2,3,4,5]
+      n=len(li)
+      k=5
+      if k in li:
+        print("found")
+      else:
+        print("not")
+
+11 . sort an array
+     a=li.sort()
+     print(a)
+
+12. search an array for given value
+     li=[1,2,3,4,5]
+      n=len(li)
+      k=5
+      if k in li:
+        print("found")
+      else:
+        print("not")
+
+13. reverse an array
+a=li[::-1]
+print(a)
+
+14.remove duplicates
+a=list(set(li))
+print(a)
+
+15. rotate an array
+li=[1,2,3,4,5]
+k=2
+l=li+li
+print(l[k:(len(li)+k)])
+------------------>
+[3, 4, 5, 1, 2]
